@@ -23,16 +23,26 @@ class AddJournalViewController: UIViewController {
     }
     
     @IBAction func save(_ sender: Any) {
+        
+        guard let title = titleTextField.text,
+        let note = noteTextView.text,
+            !title.isEmpty else {return}
+        
+        if let entry = entry{
+            entryController?.updateEntry(entry: entry, with: title, note: note)
+        } else {
+            entryController?.createEntry(with: title, note: note)
+        }
+        
+        navigationController?.popViewController(animated: true)
+        
     }
     
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    func updateViews() {
+        title = entry?.title ?? "Create Entry"
+        
+        titleTextField.text = entry?.title
+        noteTextView.text = entry?.note
     }
-    */
 
 }

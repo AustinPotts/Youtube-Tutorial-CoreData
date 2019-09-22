@@ -13,6 +13,8 @@ class AddJournalViewController: UIViewController {
     @IBOutlet weak var titleTextField: UITextField!
     @IBOutlet weak var noteTextView: UITextView!
     
+    var entryController: EntryController?
+    var entry: Entry?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -20,7 +22,9 @@ class AddJournalViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
-
+    @IBAction func save(_ sender: Any) {
+    }
+    
     /*
     // MARK: - Navigation
 

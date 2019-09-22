@@ -14,6 +14,10 @@
 		4556A6FA23370F3300FD0CC5 /* JournalTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4556A6F923370F3300FD0CC5 /* JournalTableViewController.swift */; };
 		4556A6FC23370F4B00FD0CC5 /* AddJournalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4556A6FB23370F4B00FD0CC5 /* AddJournalViewController.swift */; };
 		4556A700233710AC00FD0CC5 /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 4556A6FE233710AC00FD0CC5 /* Model.xcdatamodeld */; };
+		4556A7022337119300FD0CC5 /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4556A7012337119300FD0CC5 /* CoreDataStack.swift */; };
+		4556A704233713EA00FD0CC5 /* EntryController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4556A703233713EA00FD0CC5 /* EntryController.swift */; };
+		4556A7062337141100FD0CC5 /* EntryRepresentation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4556A7052337141100FD0CC5 /* EntryRepresentation.swift */; };
+		4556A7092337150000FD0CC5 /* Entry+Convenience.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4556A7082337150000FD0CC5 /* Entry+Convenience.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +30,10 @@
 		4556A6F923370F3300FD0CC5 /* JournalTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JournalTableViewController.swift; sourceTree = "<group>"; };
 		4556A6FB23370F4B00FD0CC5 /* AddJournalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddJournalViewController.swift; sourceTree = "<group>"; };
 		4556A6FF233710AC00FD0CC5 /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
+		4556A7012337119300FD0CC5 /* CoreDataStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
+		4556A703233713EA00FD0CC5 /* EntryController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntryController.swift; sourceTree = "<group>"; };
+		4556A7052337141100FD0CC5 /* EntryRepresentation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntryRepresentation.swift; sourceTree = "<group>"; };
+		4556A7082337150000FD0CC5 /* Entry+Convenience.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Entry+Convenience.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -42,7 +50,8 @@
 		4556A6DB23370D6C00FD0CC5 = {
 			isa = PBXGroup;
 			children = (
-				4556A6FE233710AC00FD0CC5 /* Model.xcdatamodeld */,
+				4556A7082337150000FD0CC5 /* Entry+Convenience.swift */,
+				4556A7072337141E00FD0CC5 /* Models */,
 				4556A6FD23370F5000FD0CC5 /* View Controllers */,
 				4556A6E623370D6C00FD0CC5 /* TheJournal */,
 				4556A6E523370D6C00FD0CC5 /* Products */,
@@ -76,6 +85,17 @@
 				4556A6FB23370F4B00FD0CC5 /* AddJournalViewController.swift */,
 			);
 			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		4556A7072337141E00FD0CC5 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				4556A7052337141100FD0CC5 /* EntryRepresentation.swift */,
+				4556A7012337119300FD0CC5 /* CoreDataStack.swift */,
+				4556A6FE233710AC00FD0CC5 /* Model.xcdatamodeld */,
+				4556A703233713EA00FD0CC5 /* EntryController.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -149,8 +169,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4556A704233713EA00FD0CC5 /* EntryController.swift in Sources */,
+				4556A7022337119300FD0CC5 /* CoreDataStack.swift in Sources */,
 				4556A6FC23370F4B00FD0CC5 /* AddJournalViewController.swift in Sources */,
 				4556A6FA23370F3300FD0CC5 /* JournalTableViewController.swift in Sources */,
+				4556A7092337150000FD0CC5 /* Entry+Convenience.swift in Sources */,
+				4556A7062337141100FD0CC5 /* EntryRepresentation.swift in Sources */,
 				4556A6E823370D6C00FD0CC5 /* AppDelegate.swift in Sources */,
 				4556A700233710AC00FD0CC5 /* Model.xcdatamodeld in Sources */,
 			);

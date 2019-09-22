@@ -81,7 +81,9 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="l33-73-K6i"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Journal" id="9yN-c3-ncX"/>
+                    <navigationItem key="navigationItem" title="Journal" id="9yN-c3-ncX">
+                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="5wh-ha-zSD"/>
+                    </navigationItem>
                     <connections>
                         <outlet property="noteTextView" destination="tJJ-QR-ZVz" id="TTZ-WS-p6e"/>
                         <outlet property="titleTextField" destination="cmh-p3-DQz" id="Rw4-Da-KJE"/>

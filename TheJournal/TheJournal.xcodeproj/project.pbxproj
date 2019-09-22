@@ -50,7 +50,6 @@
 		4556A6DB23370D6C00FD0CC5 = {
 			isa = PBXGroup;
 			children = (
-				4556A7082337150000FD0CC5 /* Entry+Convenience.swift */,
 				4556A7072337141E00FD0CC5 /* Models */,
 				4556A6FD23370F5000FD0CC5 /* View Controllers */,
 				4556A6E623370D6C00FD0CC5 /* TheJournal */,
@@ -90,6 +89,7 @@
 		4556A7072337141E00FD0CC5 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				4556A7082337150000FD0CC5 /* Entry+Convenience.swift */,
 				4556A7052337141100FD0CC5 /* EntryRepresentation.swift */,
 				4556A7012337119300FD0CC5 /* CoreDataStack.swift */,
 				4556A6FE233710AC00FD0CC5 /* Model.xcdatamodeld */,
